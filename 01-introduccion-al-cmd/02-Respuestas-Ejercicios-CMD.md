@@ -38,7 +38,7 @@ py Carpeta_1\Carpeta_2\Carpeta_3\Carpeta_3.1\Script_3.1
 ##### **Ejercicio 5 - Respuesta:**
 
 ```q
-# Desde la carpeta_2 escribimos: 
+# Desde la carpeta_2.1 escribimos: 
 copy con archi_0.py
 print("Código en Python!")
 py archi_0.py
