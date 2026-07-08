@@ -15,7 +15,7 @@ cd ..\..\..
 ##### **Ejercicio 2 - Respuesta:**
 
 ```q
-cd Carpeta1\Carpeta2
+cd Carpeta_1\Carpeta_2
 ```
 
 ##### **Ejercicio 3 - Respuesta:**
