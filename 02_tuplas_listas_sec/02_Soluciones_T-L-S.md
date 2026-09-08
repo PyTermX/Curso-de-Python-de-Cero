@@ -48,7 +48,7 @@ print(numeros_lista)  # [5, 3, 8, 1, 9]
 ```python
 persona = ("Ramiro", 25, "Newyork")
 nombre, edad, ciudad = persona
-print(nombre, edad, ciudad)  # Ramiro 25 Newtork
+print(nombre, edad, ciudad)  # Ramiro 25 Newyork
 ```
 
 ---
@@ -99,13 +99,6 @@ eliminado = animales.pop()
 print(eliminado)  # loro
 print(animales)   # ['perro', 'gato']
 ```
-
-**7.**
-```python
-cuadrados = [n ** 2 for n in [1, 2, 3, 4, 5]]
-print(cuadrados)  # [1, 4, 9, 16, 25]
-```
-
 ---
 
 ## Parte 3: Secuencias — Soluciones
@@ -148,4 +141,39 @@ print(repetida)  # [1, 2, 3, 1, 2, 3, 1, 2, 3]
 ```
 
 **7.**
+```python
+s = [5, 10, 15, 20]
+print(s.index(15))  # 2
+```
 
+---
+
+## Parte 4: pathlib — Soluciones
+
+**1.**
+```python
+from pathlib import Path
+
+ruta = Path("documentos/reporte.txt")
+print(ruta.name)    # reporte.txt
+print(ruta.suffix)  # .txt
+```
+
+**2.**
+```python
+from pathlib import Path
+
+directorio_actual = Path.cwd()
+ruta_notas = directorio_actual / "notas.txt"
+print(ruta_notas)
+```
+
+**3.**
+```python
+from pathlib import Path
+
+extensiones_validas = [".txt", ".csv", ".pdf"]
+ruta = Path("informe.pdf")
+
+print(ruta.suffix in extensiones_validas)  # True
+```
