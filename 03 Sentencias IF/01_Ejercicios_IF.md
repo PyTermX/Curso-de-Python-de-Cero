@@ -40,6 +40,8 @@ Lista de ejercicios para practicar lo visto en el curso. Cada uno indica el obje
 
 **Enunciado:** crear un programa que permita agregar tareas pendientes. No se deben aceptar tareas vacías ni permitir tareas duplicadas.
 
+**Tareas propuestas:** tareas = ["Estudiar Python", "Hacer ejercicio", "Leer un libro"]
+
 <a id="ejercicio-2"></a>
 
 ### 2. Sistema de inicio de sesión
@@ -48,11 +50,26 @@ Lista de ejercicios para practicar lo visto en el curso. Cada uno indica el obje
 
 **Enunciado:** crear un sistema de inicio de sesión que solicite un nombre de usuario y una contraseña. El programa debe comprobar si las credenciales son correctas y mostrar mensajes específicos dependiendo del error.
 
+**Usuarios Propuestos:** 
+
+- usuario_registrado = "admin"
+
+- contrasena_registrada = "python123"
+
 <a id="ejercicio-3"></a>
 
 ### 3. Sistema de descuentos en una tienda
 
 **Objetivo:** calcular descuentos dependiendo del importe de compra y validar que el usuario ingrese una cantidad numérica.
+
+Descuentos que aplica esta solución:
+
+| Importe de la compra | Descuento |
+|---|---:|
+| Menos de 500 | 0% |
+| Desde 500 | 5% |
+| Desde 1000 | 10% |
+| Desde 2000 | 15% |
 
 <!-- TODO: agregar el enunciado del ejercicio 3 (rangos de importe y porcentajes de descuento). -->
 
@@ -61,5 +78,14 @@ Lista de ejercicios para practicar lo visto en el curso. Cada uno indica el obje
 ### 4. Validador de registro de usuarios
 
 **Objetivo:** validar los datos de un formulario antes de permitir el registro.
+
+Validaciones que aplica esta solución, en orden:
+
+1. Campos vacíos.
+2. Usuario de al menos 5 caracteres.
+3. Correo con `@` y `.`.
+4. Contraseña de al menos 8 caracteres.
+5. Contraseña y confirmación iguales.
+6. Edad numérica, de al menos 18 y no mayor a 120.
 
 <!-- TODO: agregar el enunciado del ejercicio 4 (campos del formulario y reglas de validación). -->
