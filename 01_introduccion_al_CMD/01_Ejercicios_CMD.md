@@ -26,8 +26,6 @@
 
 # Ejercicios de navegación por carpetas en la terminal
 
-<a id="contenido"></a>
-
 ## Contenido
 
 - [Estructura de las carpetas para el ejemplo](#estructura)
@@ -129,3 +127,14 @@ Escritorio
 - **Ejecutar:** `archi_0.py`
 
 <!-- TODO: agregar los comandos de solución de cada ejercicio, por ejemplo dentro de <details><summary>Ver solución</summary> ... </details> -->
+
+
+# Apoya el proyecto
+
+Si te gusta el contenido:
+
+Suscríbete al canal para no perderte los próximos tutoriales.
+Deja un comentario si tienes dudas o sugerencias.
+Comparte el video con alguien que también quiera aprender programación.
+
+Mucha suerte a todos en el camino.
