@@ -1,3 +1,31 @@
+<!--
+  BANNER: se genera desde una URL, no necesita archivos extra.
+  Para editarlo cambia en la URL: text= (título), desc= (subtítulo), color= (fondo, hex sin #),
+  fontColor= (color del texto, hex sin #) y height= (alto en píxeles).
+  Usa %20 para los espacios. Si no quieres banner, borra este bloque <p>.
+-->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=151515&height=220&section=header&text=PyTermX&fontSize=64&fontColor=FFC928&fontAlign=50&fontAlignY=42&desc=Aprende%2C%20practica%20y%20automatiza&descSize=26&descAlign=50&descAlignY=70" alt="PyTermX: Aprende, practica y automatiza" width="100%">
+</p>
+
+<p align="center">
+  <strong>Guía de referencia de los valores falsy y truthy en Python: valores incorporados, reglas de evaluación y ejemplos para ejecutar.</strong>
+</p>
+
+<!-- BADGES: edita el texto entre las barras (Etiqueta-Mensaje-Color). Guion bajo = espacio. -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Lenguaje-Python-FFC928?style=flat-square&labelColor=151515" alt="Lenguaje: Python">
+  <img src="https://img.shields.io/badge/Tema-Truthy_y_Falsy-E53935?style=flat-square&labelColor=151515" alt="Tema: truthy y falsy">
+  <img src="https://img.shields.io/badge/Tipo-Gu%C3%ADa_de_referencia-333333?style=flat-square&labelColor=151515" alt="Tipo: guía de referencia">
+</p>
+
+<p align="center">
+  <a href="#falsy">Valores falsy</a> ·
+  <a href="#truthy">Valores truthy</a> ·
+  <a href="#reglas">Reglas de evaluación</a> ·
+  <a href="#ejemplos">Ejemplos</a>
+</p>
+
 # Truthy y Falsy en Python
 
 En Python, cualquier objeto puede evaluarse en un contexto booleano con `bool(obj)`.
@@ -5,9 +33,18 @@ En Python, cualquier objeto puede evaluarse en un contexto booleano con `bool(ob
 - **Falsy**: valores que se evalúan como `False`.
 - **Truthy**: valores que se evalúan como `True`.
 
+> [!NOTE]
 > No existe una lista exhaustiva de valores *truthy*, porque **cualquier objeto es truthy por defecto**, salvo que sea uno de los valores falsy incorporados o que implemente reglas personalizadas.
 
----
+## Contenido
+
+- [Valores Falsy incorporados en Python](#falsy)
+- [Valores Truthy](#truthy)
+- [Reglas de evaluación booleana](#reglas)
+- [Ejemplos rápidos](#ejemplos)
+- [Nota sobre librerías externas](#librerias)
+
+<a id="falsy"></a>
 
 ## Valores Falsy incorporados en Python
 
@@ -36,10 +73,11 @@ En Python, cualquier objeto puede evaluarse en un contexto booleano con `bool(ob
 | Objeto con `__bool__` que retorna `False` | `False` | Personalizado |
 | Objeto con `__len__` que retorna `0` | `False` | Personalizado |
 
-> Importante: `float('nan')` **no** es falsy. Es truthy.
+> [!IMPORTANT]
+> `float('nan')` **no** es falsy. Es truthy.
 > También: `0.0` y `-0.0` sí son falsy.
 
----
+<a id="truthy"></a>
 
 ## Valores Truthy
 
@@ -54,7 +92,7 @@ No se pueden enumerar todos, porque cualquier objeto es truthy por defecto. Son 
 - Funciones, clases, módulos, excepciones, `object()`, `Ellipsis`, etc.
 - Cualquier objeto por defecto si no define `__bool__` ni `__len__`.
 
----
+<a id="reglas"></a>
 
 ## Reglas de evaluación booleana
 
@@ -79,7 +117,7 @@ print(bool(Vacio()))     # False
 print(bool(Verdadero())) # True
 ```
 
----
+<a id="ejemplos"></a>
 
 ## Ejemplos rápidos
 
@@ -130,7 +168,7 @@ for valor in valores_truthy:
     print(repr(valor), bool(valor))
 ```
 
----
+<a id="librerias"></a>
 
 ## Nota sobre librerías externas
 
