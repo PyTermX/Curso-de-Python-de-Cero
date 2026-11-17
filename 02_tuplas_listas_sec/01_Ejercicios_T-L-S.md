@@ -1,9 +1,37 @@
+<!--
+  BANNER: se genera desde una URL, no necesita archivos extra.
+  Para editarlo cambia en la URL: text= (título), desc= (subtítulo), color= (fondo, hex sin #),
+  fontColor= (color del texto, hex sin #) y height= (alto en píxeles).
+  Usa %20 para los espacios. Si no quieres banner, borra este bloque <p>.
+-->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=151515&height=220&section=header&text=PyTermX&fontSize=64&fontColor=FFC928&fontAlign=50&fontAlignY=42&desc=Aprende%2C%20practica%20y%20automatiza&descSize=26&descAlign=50&descAlignY=70" alt="PyTermX: Aprende, practica y automatiza" width="100%">
+</p>
+
+<p align="center">
+  <strong>Ejercicios de Python sobre tuplas, listas, secuencias y pathlib, basados en los videos del Curso de Python de PyTermX.</strong>
+</p>
+
+<!-- BADGES: edita el texto entre las barras (Etiqueta-Mensaje-Color). Guion bajo = espacio. -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Ejercicios-23-E53935?style=flat-square&labelColor=151515" alt="23 ejercicios">
+  <img src="https://img.shields.io/badge/Lenguaje-Python-FFC928?style=flat-square&labelColor=151515" alt="Lenguaje: Python">
+  <img src="https://img.shields.io/badge/Partes-4-333333?style=flat-square&labelColor=151515" alt="4 partes">
+</p>
+
+<p align="center">
+  <a href="#tuplas">Parte 1: Tuplas</a> ·
+  <a href="#listas">Parte 2: Listas</a> ·
+  <a href="#secuencias">Parte 3: Secuencias</a> ·
+  <a href="#pathlib">Parte 4: pathlib</a>
+</p>
+
 # Ejercicios de Python: Tuplas, Listas, Secuencias y pathlib
 
-> Nota: Todos los ejercicios son acorde a los visto en los vídeos del Curso de Python (PyTermX). Si tienen alguna pregunta, no duden en hacermela saber en
-> los comentarios del vídeo! Saludos y Suerte!
+> [!NOTE]
+> Todos los ejercicios corresponden a lo visto en los videos del Curso de Python (PyTermX). Si tienes alguna pregunta, déjala en los comentarios del video. Saludos y mucha suerte.
 
----
+<a id="tuplas"></a>
 
 ## Parte 1: Tuplas
 
@@ -21,7 +49,7 @@
 
 7. Dada la tupla `persona = ("Ramiro", 25, "Newyork")`, desempaca sus tres valores en las variables `nombre`, `edad` y `ciudad`.
 
----
+<a id="listas"></a>
 
 ## Parte 2: Listas
 
@@ -37,7 +65,7 @@
 
 6. Dada la lista `animales = ["perro", "gato", "loro"]`, elimina el último elemento usando `pop()` y guarda el valor eliminado en una variable.
 
----
+<a id="secuencias"></a>
 
 ## Parte 3: Secuencias (operaciones generales aplicables a listas, tuplas y cadenas)
 
@@ -55,7 +83,7 @@
 
 7. Dada la secuencia `s = [5, 10, 15, 20]`, obtén el índice del valor `15` usando el método `index()`.
 
----
+<a id="pathlib"></a>
 
 ## Parte 4: pathlib
 
@@ -64,5 +92,3 @@
 2. Usando `pathlib.Path`, obtén la ruta absoluta del directorio actual con `Path.cwd()` y construye una nueva ruta que apunte a un archivo `"notas.txt"` dentro de ese directorio usando el operador `/`.
 
 3. Crea una lista `extensiones_validas = [".txt", ".csv", ".pdf"]` y un objeto `ruta = Path("informe.pdf")`. Usando el operador `in`, verifica si `ruta.suffix` está contenido en la lista `extensiones_validas`.
-
----
