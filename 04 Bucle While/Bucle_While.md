@@ -25,7 +25,8 @@
   <a href="#evaluacion">Evaluación</a> ·
   <a href="#cero-veces">Cero veces</a> ·
   <a href="#while-vs-if">while e if</a> ·
-  <a href="#actualizacion">Actualización</a>
+  <a href="#actualizacion">Actualización</a> ·
+  <a href="#break-continue">break y continue</a>
 </p>
 
 # Ciclo `while` en Python
@@ -46,6 +47,7 @@ A diferencia de una estructura `if`, que normalmente evalúa una condición para
 - [4. El while puede ejecutarse cero veces](#cero-veces)
 - [5. Qué hace diferente al while de if](#while-vs-if)
 - [6. La actualización de la condición](#actualizacion)
+- [7. break y continue](#break-continue)
 
 <a id="estructura"></a>
 
@@ -185,6 +187,7 @@ Y nuevamente:
 False
 ```
 
+
 Esta representación es mucho más importante que memorizar la sintaxis.
 
 <a id="cero-veces"></a>
@@ -307,6 +310,47 @@ Por eso normalmente necesitamos que dentro del ciclo exista algún mecanismo que
 
 ```python
 contador += 1
+```
+
+<a id="break-continue"></a>
+
+## 7. `break` y `continue`
+
+Dentro de los ciclos existen dos instrucciones especialmente importantes.
+
+### `break`
+
+Interrumpe completamente el ciclo.
+
+```text
+while
+ ↓
+iteración
+ ↓
+break
+ ↓
+FIN DEL CICLO
+```
+
+### `continue`
+
+No termina el ciclo. Lo que hace es saltar el resto de la iteración actual y comenzar la siguiente evaluación de la condición. Conceptualmente:
+
+```text
+while
+ ↓
+cuerpo
+ ↓
+continue
+ ↓
+evaluar condición nuevamente
+```
+
+Esta diferencia es fundamental:
+
+```text
+break    → termina el ciclo
+continue → termina la iteración actual
 ```
 
 # Apoya el proyecto
